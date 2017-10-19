@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title >chrome easter egg: t-rex runner</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="brain.css">
     <script src="index.js"></script>
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script>
@@ -44,7 +45,23 @@
         </div>
     </div>
     <div>
-        <button onclick="connectToMuse()"> Connect </button>
+        <button id="connect"> Connect </button>
+        <div>
+            <p>
+                Sensitivity: <input id="sensitivity" value="400" type="range" min="50" max="1000">
+            </p>
+            <p>
+                Eyes: 
+                <div id="eyes-left">
+                    <input type="checkbox" id="eyes-left">Left 
+                    <span class="eye-icon">👁</span>    
+                </div>
+                <div id="eyes-right">
+                    <input type="checkbox" id="eyes-right">Right
+                    <span class="eye-icon">👁</span>
+                </div>
+            </p>
+        </div>
     </div>
 </body>
 
