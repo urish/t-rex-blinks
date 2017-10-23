@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title >chrome easter egg: t-rex runner</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="brain.css">
+    <link rel="stylesheet" href="brain.css?v=2">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <script src="index.js"></script>
     <script src="node_modules/systemjs/dist/system.js"></script>
@@ -31,7 +31,7 @@
 </head>
 
 <body id="t" class="offline">
-    <div id="main-frame-error" class="interstitial-wrapper">
+    <div id="main-frame-error" class="interstitial-wrapper" style="position: relative; margin-top: 100px">
         <div id="main-content">
             <div class="icon icon-offline" alt=""></div>
         </div>
@@ -46,6 +46,9 @@
         </div>
     </div>
     <div class="bar">
+        Powered by Web Bluetooth<br />
+        <br />
+
         Learn more: &nbsp;https://urish.org/brain <br />  
         <br />
         @UriShaked
