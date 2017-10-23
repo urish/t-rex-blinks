@@ -1,7 +1,23 @@
+body {
+    font-family: 'Arimo', sans-serif;    
+}
+
 .eye-icon {
     font-size: 32px;
 }
 
 .blink {
     color: red;
-};
+}
+
+.controls {
+    padding: 16px;
+}
+
+.bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 30px;
+}

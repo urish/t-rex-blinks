@@ -7,6 +7,7 @@
     <title >chrome easter egg: t-rex runner</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="brain.css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <script src="index.js"></script>
     <script src="node_modules/systemjs/dist/system.js"></script>
     <script>
@@ -44,22 +45,27 @@
             </template>
         </div>
     </div>
-    <div>
+    <div class="bar">
+        Learn more: &nbsp;https://urish.org/brain <br />  
+        <br />
+        @UriShaked
+    </div>
+    <div class="controls">
         <button id="connect"> Connect </button>
         <div>
             <p>
                 Sensitivity: <input id="sensitivity" value="400" type="range" min="50" max="1000">
             </p>
             <p>
-                Eyes: 
-                <div id="eyes-left">
+                Eyes: <br /> 
+                <span id="eyes-left">
                     <input type="checkbox" id="eyes-left"> 
                     <span class="eye-icon">Left</span>    
-                </div>
-                <div id="eyes-right">
+                </span>
+                <span id="eyes-right">
                     <input type="checkbox" id="eyes-right">
                     <span class="eye-icon">Right</span>
-                </div>
+                </span>
             </p>
         </div>
     </div>
