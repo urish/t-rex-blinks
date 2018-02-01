@@ -72,8 +72,8 @@ async function connectToMuse() {
     await client.connect();
     await client.start();
 
-    const leftChannel = channelNames.indexOf('AF7');
-    const rightChannel = channelNames.indexOf('AF8');
+    const leftChannel = channelNames.indexOf('TP9');
+    const rightChannel = channelNames.indexOf('TP10');
     const blinks = client.eegReadings
         .filter(r => {
             return (leftEyeInput.checked && r.electrode === leftChannel)
